@@ -100,8 +100,8 @@
 // delete myCity.info;
 // console.log(myCity);
 
-const name = 'Andrew';
-const postsQty = 35;
+// const name = 'Andrew';
+// const postsQty = 35;
 
 // const userProfile = {
 //     name: name,
@@ -110,11 +110,27 @@ const postsQty = 35;
 // }
 // console.log(userProfile);
 
-const userProfile = { // таже запись, что выше, но в сокращенном формате
-    name,
-    postsQty,
-    hasSignedAgreement: false,
-}
-console.log(userProfile);
+// const userProfile = { // таже запись, что выше, но в сокращенном формате
+//     name,
+//     postsQty,
+//     hasSignedAgreement: false,
+// }
+// console.log(userProfile);
 
+// const myCity = {
+//     myCity: 'Ivanovo',
+//     cityGreeting: function () {
+//         console.log('Greetings');
+//     }
+// }
+// myCity.cityGreeting ();
+
+const myCity = {  // сокращенная запись по сравнению с предыдущим форматом
+    myCity: 'Ivanovo',
+    cityGreeting () {
+        console.log('Greetings!');
+    }
+}
+
+myCity.cityGreeting ();
 
