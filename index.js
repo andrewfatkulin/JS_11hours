@@ -125,12 +125,26 @@
 // }
 // myCity.cityGreeting ();
 
-const myCity = {  // сокращенная запись по сравнению с предыдущим форматом
-    myCity: 'Ivanovo',
-    cityGreeting () {
-        console.log('Greetings!');
-    }
-}
+// const myCity = {  // сокращенная запись по сравнению с предыдущим форматом
+//     myCity: 'Ivanovo',
+//     cityGreeting () {
+//         console.log('Greetings!');
+//     }
+// }
 
-myCity.cityGreeting ();
+// myCity.cityGreeting ();
 
+// const post = {
+//     title: 'My post',
+//     likesQty: 5,
+// }
+// //console.log(post);
+// JSON.stringify(post); // преобразование JS объекта в JSON
+// const postStringified = JSON.stringify (post);
+// JSON.parse (postStringified); // преобразование JSON в JS объект
+
+const a = 10;
+let b = a;
+b = 30;
+console.log(a);
+console.log(b);
