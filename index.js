@@ -143,8 +143,27 @@
 // const postStringified = JSON.stringify (post);
 // JSON.parse (postStringified); // преобразование JSON в JS объект
 
-const a = 10;
-let b = a;
-b = 30;
-console.log(a);
-console.log(b);
+// const a = 10;
+// let b = a;
+// b = 30;
+// console.log(a);
+// console.log(b);
+
+// const person = {
+//     name: 'Andrew',
+//     age: 35,
+// }
+// person.age = 36;
+// person.isAdutl = true;
+// console.log(person);
+
+const person = {
+    name: 'Andrew',
+    age: 35,
+}
+const person2 = person; // Мутирование копий
+person2.age = 36;
+person2.isAdult = true;
+
+console.log(person.age);
+console.log(person.isAdult);
