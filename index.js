@@ -157,13 +157,22 @@
 // person.isAdutl = true;
 // console.log(person);
 
+// const person = {
+//     name: 'Andrew',
+//     age: 35,
+// }
+// const person2 = person; // Мутирование копий
+// person2.age = 36;
+// person2.isAdult = true;
+
+// console.log(person.age);
+// console.log(person.isAdult);
+
 const person = {
     name: 'Andrew',
     age: 35,
 }
-const person2 = person; // Мутирование копий
-person2.age = 36;
-person2.isAdult = true;
-
+const person2 = Object.assign ({}, person);
+person2.age = 33;
 console.log(person.age);
-console.log(person.isAdult);
+console.log(person2.age);
