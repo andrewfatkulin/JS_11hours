@@ -168,11 +168,43 @@
 // console.log(person.age);
 // console.log(person.isAdult);
 
+// const person = {
+//     name: 'Andrew',
+//     age: 35,
+// }
+// const person2 = Object.assign ({}, person);
+// person2.age = 33;
+// console.log(person.age);
+// console.log(person2.age);
+
+// const person = {
+//     name: 'Andrew',
+//     age: {
+//         age: 35,
+//         son: 'Semen',
+//     }
+    
+// }
+// const person2 = {...person};
+// person2.name = 'Oksana';
+// const person3 = {...person};
+// person3.age.son = 'Petr'; // при изменении вложенного свойства, изменяется и оригинальное свойство объекта и ссылка СОХРАНЯЕТСЯ
+// console.log(person.name);
+// console.log(person2.name);
+// console.log(person.age.son);
+// console.log(person3.age.son);
+
 const person = {
     name: 'Andrew',
-    age: 35,
+    son: {
+        son: 'Semen',
+    }
 }
-const person2 = Object.assign ({}, person);
-person2.age = 33;
-console.log(person.age);
-console.log(person2.age);
+const person2 = JSON.parse (JSON.stringify(person));
+person2.name = 'Oksana';
+person3 = JSON.parse (JSON.stringify(person)); // ссылки вложенно объекта НЕ СОХРАНЯЮТСЯ
+person3.son.son = 'Petr'
+console.log(person.name);
+console.log(person2.name);
+console.log(person.son.son);
+console.log(person3.son.son);
