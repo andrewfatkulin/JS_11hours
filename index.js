@@ -188,23 +188,65 @@
 // const person2 = {...person};
 // person2.name = 'Oksana';
 // const person3 = {...person};
-// person3.age.son = 'Petr'; // при изменении вложенного свойства, изменяется и оригинальное свойство объекта и ссылка СОХРАНЯЕТСЯ
+// person3.age.son = 'Petr'; // при изменении вложенного свойства, изменяется и оригинальное свойство объекта, т.е ссылка НЕ СОХРАНЯЕТСЯ
 // console.log(person.name);
 // console.log(person2.name);
 // console.log(person.age.son);
 // console.log(person3.age.son);
 
-const person = {
-    name: 'Andrew',
-    son: {
-        son: 'Semen',
-    }
-}
-const person2 = JSON.parse (JSON.stringify(person));
-person2.name = 'Oksana';
-person3 = JSON.parse (JSON.stringify(person)); // ссылки вложенно объекта НЕ СОХРАНЯЮТСЯ
-person3.son.son = 'Petr'
-console.log(person.name);
-console.log(person2.name);
-console.log(person.son.son);
-console.log(person3.son.son);
+// const person = {
+//     name: 'Andrew',
+//     son: {
+//         son: 'Semen',
+//     }
+// }
+// const person2 = JSON.parse (JSON.stringify(person));
+// person2.name = 'Oksana';
+// person3 = JSON.parse (JSON.stringify(person)); // ссылки вложенно объекта НЕ СОХРАНЯЮТСЯ
+// person3.son.son = 'Petr'
+// console.log(person.name);
+// console.log(person2.name);
+// console.log(person.son.son);
+// console.log(person3.son.son);
+
+// ФУНКЦИИ
+
+// let a = 5;
+// let b = 3;
+// let c;
+// c = a + b;
+// console.log(c);
+
+// a = 8;
+// b = 12;
+// c = a + b;
+// console.log(c);
+
+//Оптимизация примера выше с помощью функции
+
+// let a = 5;
+// let b = 3;
+// function sum (a, b) {
+//     const c = a + b;
+//     console.log(c);
+// }
+// sum (a, b);
+
+// a = 8;
+// b = 12;
+// sum (a, b);
+
+// ФУНКЦИЯ - ЭТО ОБЪЕКТ
+
+// function myFn (a, b) {
+//     a = a + 1;
+//     c = a + b;
+//     return c
+// };
+// console.dir (myFn);
+
+function myFn (a, b) {
+    a = a + 1;
+    c = a + b;
+    return c
+};
