@@ -245,8 +245,24 @@
 // };
 // console.dir (myFn);
 
-function myFn (a, b) {
-    a = a + 1;
-    c = a + b;
-    return c
-};
+// function myFn (a, b) {
+//     a = a + 1;
+//     c = a + b;
+//     return c
+// };
+
+// function myFn (a, b) {
+//     let c
+//     a = a + 1
+//     c = a + b
+//     return c
+// };
+// const d = myFn (10, 3);
+// console.log(d);
+// const g = myFn (15, 9);
+// console.log(g);
+
+function myFn () {};
+myFn ();
+const F = myFn ();
+console.log(F);
