@@ -291,4 +291,36 @@
 // }
 // console.log(start());
 
-// Продолжение курса
+// Продолжение курса + дополнение от А.К. 
+
+// function increasePersonAge (person) {
+//     const clonedPerson = JSON.parse(JSON.stringify(person))
+//     console.log('Person here => ', clonedPerson)
+//     clonedPerson.age += 1
+//     console.log('Person here => ', clonedPerson)
+//     return clonedPerson
+// }
+// const personOne = {
+//     name: 'Andrew',
+//     age: 35
+// }
+// const personTwo = {
+//     name: 'Oksana',
+//     age: 33
+// }
+// increasePersonAge (personOne);
+// increasePersonAge (personTwo);
+// console.log('Andrew age ' + personOne.age);
+// console.log('Oksana age ' + personTwo.age);
+
+// Пример от А.К.
+function increasePersonAge (age) {
+    age += 1
+    return age
+}
+const personAge1 = 35
+const personAge2 = 33
+increasePersonAge(personAge1);
+increasePersonAge(personAge2);
+console.log('increasePersonAge1 => ' + personAge1);
+console.log('increasePersonAge2 => ' + personAge2);
