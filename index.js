@@ -262,7 +262,33 @@
 // const g = myFn (15, 9);
 // console.log(g);
 
-function myFn () {};
-myFn ();
-const F = myFn ();
-console.log(F);
+// function myFn () {};
+// myFn ();
+// const F = myFn ();
+// console.log(F);
+
+// Практика от Антона Комарова
+
+// const start = () => {
+//     return start ()
+// }
+// start ();
+
+// const start = (x, y) => {
+//     return start (x, y) // RangeError: Maximum call stack size exceeded
+// }
+// start (10, 20);
+// console.log(start);
+
+// const start = (x, y) => {
+//     return start // Функция вернет саму себя, но не вызовется
+// }
+// start (10, 20);
+// console.log(start);
+
+// const start = () => {
+//     return undefined
+// }
+// console.log(start());
+
+// Продолжение курса
