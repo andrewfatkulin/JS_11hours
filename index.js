@@ -314,13 +314,31 @@
 // console.log('Oksana age ' + personTwo.age);
 
 // Пример от А.К.
-function increasePersonAge (age) {
-    age += 1
-    return age
+// function increasePersonAge (age) {
+//     age += 1
+//     return age
+// }
+// const personAge1 = 35
+// const personAge2 = 33
+// increasePersonAge(personAge1);
+// increasePersonAge(personAge2);
+// console.log('increasePersonAge1 => ' + personAge1);
+// console.log('increasePersonAge2 => ' + personAge2);
+
+// Продолжение курса:
+
+const personOne = {
+    name: 'Andrew',
+    age: 35
 }
-const personAge1 = 35
-const personAge2 = 33
-increasePersonAge(personAge1);
-increasePersonAge(personAge2);
-console.log('increasePersonAge1 => ' + personAge1);
-console.log('increasePersonAge2 => ' + personAge2);
+
+function increasePersonAge (person) {
+    const updatedPerson = Object.assign ({}, person)
+    updatedPerson.age +=1
+    return updatedPerson
+}
+
+const updatedPersonOne = increasePersonAge (personOne)
+
+console.log(personOne.age);
+console.log(updatedPersonOne.age);
