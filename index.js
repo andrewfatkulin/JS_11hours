@@ -327,18 +327,34 @@
 
 // Продолжение курса:
 
-const personOne = {
-    name: 'Andrew',
-    age: 35
+// const personOne = {
+//     name: 'Andrew',
+//     age: 35
+// }
+
+// function increasePersonAge (person) {
+//     const updatedPerson = Object.assign ({}, person)
+//     updatedPerson.age +=1
+//     return updatedPerson
+// }
+
+// const updatedPersonOne = increasePersonAge (personOne)
+
+// console.log(personOne.age);
+// console.log(updatedPersonOne.age);
+
+//Колбэк функция
+
+// function anotherFunction () {
+
+// }
+// function fnWithCallback (callbackFunction) {
+//     callbackFunction ()
+// }
+// fnWithCallback (anotherFunction);
+
+function printMyName () {
+    console.log('Andrew');
 }
-
-function increasePersonAge (person) {
-    const updatedPerson = Object.assign ({}, person)
-    updatedPerson.age +=1
-    return updatedPerson
-}
-
-const updatedPersonOne = increasePersonAge (personOne)
-
-console.log(personOne.age);
-console.log(updatedPersonOne.age);
+console.log('Start');
+setTimeout (printMyName, 2000);
