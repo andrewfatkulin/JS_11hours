@@ -353,8 +353,32 @@
 // }
 // fnWithCallback (anotherFunction);
 
-function printMyName () {
-    console.log('Andrew');
+// function printMyName () {
+//     console.log('Andrew');
+// }
+// console.log('Start');
+// setTimeout (printMyName, 2000);
+
+// Области видимости
+
+// let a
+// let b
+
+// function myFn () {
+//     let b
+//     a = true
+//     b = 10
+//     console.log(b);
+// }
+// myFn ()
+// console.log(a);
+// console.log(b);
+
+const a = 5
+function myFn () {
+    function innerFn () {
+        console.log(a);
+    }
+    innerFn()
 }
-console.log('Start');
-setTimeout (printMyName, 2000);
+myFn ()
