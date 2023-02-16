@@ -374,11 +374,32 @@
 // console.log(a);
 // console.log(b);
 
-const a = 5
+// Цепочка областей видимости
+// const a = 5
+// function myFn () {
+//     const c = 15
+//     console.log(c);
+//     const d = 20
+//     function innerFn () {
+//         const b = 10;
+//         console.log(a);
+//         console.log(b);
+//         console.log(d);
+//     }
+//     innerFn()
+// }
+// myFn ()
+
+// Цепочка областей видимости. Шаг за шагом.
+
+let a
+let b
 function myFn () {
-    function innerFn () {
-        console.log(a);
-    }
-    innerFn()
+    let b
+    a = true
+    b = 10
+    console.log(b);
 }
 myFn ()
+console.log(a);
+console.log(b);
