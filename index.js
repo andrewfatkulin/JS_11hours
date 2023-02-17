@@ -392,14 +392,43 @@
 
 // Цепочка областей видимости. Шаг за шагом.
 
-let a
-let b
-function myFn () {
-    let b
-    a = true
-    b = 10
-    console.log(b);
-}
-myFn ()
-console.log(a);
-console.log(b);
+// let a
+// let b
+// function myFn () {
+//     let b
+//     a = true
+//     b = 10
+//     console.log(b);
+// }
+// myFn ()
+// console.log(a);
+// console.log(b);
+
+// Необъявленные переменные
+
+// function myFn () {
+//     a = true
+//     console.log(a);
+// }
+// myFn ()
+// console.log(a);
+//const b = false
+//console.log(b);
+
+// Стройгий режим
+
+// 'use strict'
+// function myFn() {
+//     a = true
+//     console.log(a);
+// }
+// myFn()
+// console.log(a);
+
+// ОПЕРАТОРЫ
+
+let a, b
+a = 10
+b = a
+let c = a + b
+console.log(c);
