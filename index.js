@@ -427,8 +427,39 @@
 
 // ОПЕРАТОРЫ
 
-let a, b
-a = 10
-b = a
-let c = a + b
+// let a, b
+// a = 10
+// b = a
+// let c = a + b
+// console.log(c);
+
+// ЛОЖНЫЕ ЗНАЧЕНИЯ
+
+// const a = Boolean(undefined);
+// console.log(a);
+
+// const b = Boolean('');
+// console.log(b);
+
+// const c = Boolean(null);
+// console.log(c);
+
+// const d = Boolean('A');
+// console.log(d);
+
+// Пример оператора typeof:
+
+const a = typeof (10);
+console.log(a);
+
+const b = typeof (true);
+console.log(b);
+
+const c = typeof ('Andrew');
 console.log(c);
+
+const d = typeof (undefined);
+console.log(d);
+
+const e = typeof (null);
+console.log(e);
