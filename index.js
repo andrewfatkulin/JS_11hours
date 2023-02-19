@@ -449,17 +449,69 @@
 
 // Пример оператора typeof:
 
-const a = typeof (10);
+// const a = typeof (10);
+// console.log(a);
+
+// const b = typeof (true);
+// console.log(b);
+
+// const c = typeof ('Andrew');
+// console.log(c);
+
+// const d = typeof (undefined);
+// console.log(d);
+
+// const e = typeof (null);
+// console.log(e);
+
+// const a = typeof (undefined);
+// console.log(a);
+// const c = a === 'undefined';
+// console.log(c);
+
+// let isUndefined
+// const a = typeof(isUndefined)
+// console.log(isUndefined)
+// const c = a === 'undefined'
+// console.log(c)
+
+// ПРИМЕРЫ С ОПЕРАТОРОМ !
+// const a = !10;
+// console.log(a);
+
+// const b = !0;
+// console.log(b);
+
+// const c = !'abc';
+// console.log(c);
+
+// const d = !!0;
+// console.log(d);
+
+// const e = !!10;
+// console.log(e);
+
+// const f = !!undefined;
+// console.log(f);
+
+// const g = !!Object;
+// console.log(g);
+
+// ОПЕРАТОРЫ И и ИЛИ
+
+// const a = 10;
+// const b = 0;
+// const c = a || b;
+// console.log(c);
+
+const a = 10 & 0;
 console.log(a);
 
-const b = typeof (true);
+const b = undefined || 'Andrew';
 console.log(b);
 
-const c = typeof ('Andrew');
+const c = 'Andrew' & 0;
 console.log(c);
 
-const d = typeof (undefined);
+const d = 0 || undefined;
 console.log(d);
-
-const e = typeof (null);
-console.log(e);
