@@ -504,14 +504,24 @@
 // const c = a || b;
 // console.log(c);
 
-const a = 10 & 0;
+// const a = 10 & 0;
+// console.log(a);
+
+// const b = undefined || 'Andrew';
+// console.log(b);
+
+// const c = 'Andrew' & 0;
+// console.log(c);
+
+// const d = 0 || undefined;
+// console.log(d);
+
+// let a = 10;
+// const b = a && console.log('Выполнено!');
+// console.log(b);
+// let c;
+// const d = c && console.log('Выполнено!');
+// console.log(d);
+
+const a = 15 && 'Andrew' || undefined;
 console.log(a);
-
-const b = undefined || 'Andrew';
-console.log(b);
-
-const c = 'Andrew' & 0;
-console.log(c);
-
-const d = 0 || undefined;
-console.log(d);
