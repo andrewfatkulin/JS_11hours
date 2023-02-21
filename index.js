@@ -523,5 +523,48 @@
 // const d = c && console.log('Выполнено!');
 // console.log(d);
 
-const a = 15 && 'Andrew' || undefined;
-console.log(a);
+// const a = 15 && 'Andrew' || undefined;
+// console.log(a);
+
+// ОПЕРАТОР РАЗДЕЛЕНИЯ ОБЪЕКТА НА СВОЙСТВА
+
+// const button = {
+//     width: 200,
+//     text: 'Buy',
+//     color: 'yellow'
+// }
+// const redButton = {
+//     ...button,
+//     color: 'red',
+//     background: 'white'
+// }
+// console.table(redButton);
+
+// button = {
+//     width: 200,
+//     text: 'Buy',
+//     color: 'yellow'
+// }
+// const redButton = {
+//     color: 'red', // если указать цвет перед оператором разделения объекта на свойства, то цвет red заменится на yellow и порядок свойств будет начинаться с color
+//     ...button,
+//     background: 'white'
+// }
+// console.table(redButton);
+
+// ОБЪЕДИНЕНИЕ ОБЪЕКТОВ С ПОМОЩЬЮ ...
+
+const buttonInfo = {
+    text: 'Buy'
+}
+const buttonStyle = {
+    color: 'yellow',
+    width: 200,
+    height: 300
+}
+const button = {
+    ...buttonInfo,
+    background: 'white',
+    ...buttonStyle,
+}
+console.table(button);
