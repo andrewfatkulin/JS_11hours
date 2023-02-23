@@ -578,12 +578,25 @@
 // const greeting = hello + ' ' + world;
 // console.log(greeting);
 
-const hello = 'Hello';
-const world = 'World';
-const greeting = `${hello} ${world}`;
-console.log(greeting);
+// const hello = 'Hello';
+// const world = 'World';
+// const greeting = `${hello} ${world}`;
+// console.log(greeting);
 
-const name = 'Андрей';
-const town = 'Иваново';
-const infoPerson = 'Меня зовут ' + `${name}` + ' и я живу в городе ' + `${town}`;
-console.log(infoPerson); 
+// const name = 'Андрей';
+// const town = 'Иваново';
+// const infoPerson = 'Меня зовут ' + `${name}` + ' и я живу в городе ' + `${town}`;
+// console.log(infoPerson); 
+
+// ФУНКЦИОНАЛЬНЫЕ ВЫРАЖЕНИЯ. ПРИСВАИВАНИЕ ФУНКЦИОНАЛЬНОГО ВЫРАЖЕНИЯ ПЕРЕМЕННОЙ.
+
+const myFunction = function (a, b) {
+    let c
+    a = a + 1
+    c = a + b
+    return c
+}
+const d = myFunction (5, 3);
+console.log(d);
+// myFunction (5, 3);
+// console.log(myFunction (5, 3));
