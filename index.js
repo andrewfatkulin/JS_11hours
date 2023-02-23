@@ -573,7 +573,17 @@
 
 // console.log('Hello ' + 'World');
 
+// const hello = 'Hello';
+// const world = 'World';
+// const greeting = hello + ' ' + world;
+// console.log(greeting);
+
 const hello = 'Hello';
 const world = 'World';
-const greeting = hello + ' ' + world;
+const greeting = `${hello} ${world}`;
 console.log(greeting);
+
+const name = 'Андрей';
+const town = 'Иваново';
+const infoPerson = 'Меня зовут ' + `${name}` + ' и я живу в городе ' + `${town}`;
+console.log(infoPerson); 
