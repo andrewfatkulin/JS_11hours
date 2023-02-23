@@ -554,17 +554,26 @@
 
 // ОБЪЕДИНЕНИЕ ОБЪЕКТОВ С ПОМОЩЬЮ ...
 
-const buttonInfo = {
-    text: 'Buy'
-}
-const buttonStyle = {
-    color: 'yellow',
-    width: 200,
-    height: 300
-}
-const button = {
-    ...buttonInfo,
-    background: 'white',
-    ...buttonStyle,
-}
-console.table(button);
+// const buttonInfo = {
+//     text: 'Buy'
+// }
+// const buttonStyle = {
+//     color: 'yellow',
+//     width: 200,
+//     height: 300
+// }
+// const button = {
+//     ...buttonInfo,
+//     background: 'white',
+//     ...buttonStyle,
+// }
+// console.table(button);
+
+// КОНКАТЕНАЦИЯ СТРОК
+
+// console.log('Hello ' + 'World');
+
+const hello = 'Hello';
+const world = 'World';
+const greeting = hello + ' ' + world;
+console.log(greeting);
