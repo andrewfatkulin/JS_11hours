@@ -590,13 +590,29 @@
 
 // ФУНКЦИОНАЛЬНЫЕ ВЫРАЖЕНИЯ. ПРИСВАИВАНИЕ ФУНКЦИОНАЛЬНОГО ВЫРАЖЕНИЯ ПЕРЕМЕННОЙ.
 
-const myFunction = function (a, b) {
-    let c
-    a = a + 1
-    c = a + b
-    return c
-}
-const d = myFunction (5, 3);
-console.log(d);
+// const myFunction = function (a, b) {
+//     let c
+//     a = a + 1
+//     c = a + b
+//     return c
+// }
+// const d = myFunction (5, 3);
+// console.log(d);
 // myFunction (5, 3);
 // console.log(myFunction (5, 3));
+
+// const myFunction = setTimeout(function() {
+//     console.log('Отложенное выражение');
+// }, 1000);
+// console.log(myFunction);
+
+// СТРЕЛОЧНЫЕ ФУНКЦИИ
+// КАК ДАТЬ ИМЯ СТРЕЛОЧНОЙ ФУНКЦИИ? Задать ее с помощью переменной...
+const sum = (a, b) => {
+    let c
+    a = a + 1 
+    c = a + b
+    // console.log(c);
+    return c
+}
+console.log(sum (5, 3));
