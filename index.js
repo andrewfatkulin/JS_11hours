@@ -608,11 +608,18 @@
 
 // СТРЕЛОЧНЫЕ ФУНКЦИИ
 // КАК ДАТЬ ИМЯ СТРЕЛОЧНОЙ ФУНКЦИИ? Задать ее с помощью переменной...
-const sum = (a, b) => {
-    let c
-    a = a + 1 
-    c = a + b
-    // console.log(c);
-    return c
-}
-console.log(sum (5, 3));
+// const sum = (a, b) => {
+//     let c
+//     a = a + 1 
+//     c = a + b
+//     // console.log(c);
+//     return c
+// }
+// console.log(sum (5, 3));
+
+// СТРЕЛОЧНАЯ ФУНКЦИЯ В ВЫЗОВЕ ДРУГОЙ ФУНКЦИИ
+
+// setTimeout (() => {
+//     console.log('Отложенное сообщение');
+// }, 1000)
+
