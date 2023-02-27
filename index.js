@@ -623,3 +623,42 @@
 //     console.log('Отложенное сообщение');
 // }, 1000)
 
+// Пример №1:
+
+// function myltByFactor (value, multiplier = 1) { // объявленная функция
+//     return value * multiplier
+// }
+// console.log(myltByFactor (10,2));
+// console.log(myltByFactor (5));
+
+// const myltByFactor = function (value, multiplier = 1) { // анонимное функциональное выражение
+//     return value * multiplier
+// }
+// console.log(myltByFactor(10,2));
+// console.log(myltByFactor(5));
+
+// const fun = (value, multiplier = 1) => value * multiplier; // стрелочная функция
+// console.log(fun(10));
+// console.log(fun(20, 2));
+
+// const dateTime = Date (); // использование функции Date ()
+// console.log(dateTime);
+
+// Пример №2:
+
+const newPost = (post, addedAd = Date ()) => ({
+    ... post,
+    addedAd
+})
+console.log(newPost);
+
+const firstPost = {
+    id: 1,
+    author: 'Bogdan',
+}
+console.log(firstPost);
+
+console.log(newPost (firstPost));
+// const person = newPost (firstPost)
+// console.log(person);
+
