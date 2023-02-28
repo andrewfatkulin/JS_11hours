@@ -646,19 +646,36 @@
 
 // Пример №2:
 
-const newPost = (post, addedAd = Date ()) => ({
-    ... post,
-    addedAd
-})
-console.log(newPost);
+// const newPost = (post, addedAd = Date ()) => ({ // НЕЯВНЫЙ возврат нового объекта из функции
+//     ... post,
+//     addedAd
+// })
+// // console.log(newPost);
 
-const firstPost = {
-    id: 1,
-    author: 'Bogdan',
-}
-console.log(firstPost);
+// const firstPost = {
+//     id: 1,
+//     author: 'Andrew',
+// }
+// // console.log(firstPost);
 
-console.log(newPost (firstPost));
+// const secondPost = {
+//     id: 2,
+//     author: 'Oksana',
+// }
+
+// console.log(newPost (firstPost));
+// console.log(newPost (secondPost));
 // const person = newPost (firstPost)
 // console.log(person);
 
+const newPost = (post, addedAt = Date ()) => { // ЯВНЫЙ возврат нового объекта из функции
+    return {
+        ... post,
+        addedAt
+    }
+}
+const firstPost = {
+    id: 1,
+    author: 'Andrew',
+}
+console.log(newPost (firstPost));
