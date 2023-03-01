@@ -668,14 +668,37 @@
 // const person = newPost (firstPost)
 // console.log(person);
 
-const newPost = (post, addedAt = Date ()) => { // ЯВНЫЙ возврат нового объекта из функции
-    return {
-        ... post,
-        addedAt
-    }
-}
-const firstPost = {
-    id: 1,
-    author: 'Andrew',
-}
-console.log(newPost (firstPost));
+// const newPost = (post, addedAt = Date ()) => { // ЯВНЫЙ возврат нового объекта из функции
+//     return {
+//         ... post,
+//         addedAt
+//     }
+// }
+// const firstPost = {
+//     id: 1,
+//     author: 'Andrew',
+// }
+// console.log(newPost (firstPost));
+
+// ОБРАБОТКА ОШИБОК В JS
+
+// const fnWithError = () => {
+//     throw new Error ('Some error')
+// }
+// fnWithError ()
+// console.log('Continue...');
+
+// TRY/CATCH
+
+// const fnWithError = () => {
+//     throw new Error ('Some error')
+// }
+// try {
+//     fnWithError ()
+// } catch (error) {
+//     console.error(error);
+//     console.log(error.message);
+// }
+// console.log('Continue...');
+
+// ИНСТРУКЦИИ
