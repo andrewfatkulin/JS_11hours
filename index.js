@@ -701,4 +701,17 @@
 // }
 // console.log('Continue...');
 
-// ИНСТРУКЦИИ
+// ИНСТРУКЦИИ. ПРИМЕР ИНСТРУКЦИЯ ИЛИ ВЫРАЖЕНИЕ
+
+// function myFn (a) {
+//     console.log(a);
+// }
+// const b = true;
+// let c = 10;
+// const d = 3;
+
+// myFn (2+3)
+// myFn (b)
+// myFn (c = c + 1)
+// // myFn (c = c + 1;) // Error
+// myFn (d)
