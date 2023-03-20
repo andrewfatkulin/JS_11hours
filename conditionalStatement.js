@@ -1,5 +1,12 @@
-let val = 10
-if (val > 5) {
-    val += 20
+// let val = 10
+// if (val > 5) {
+//     val += 20
+// }
+// console.log(val);
+
+const person = {
+    age: 20
 }
-console.log(val);
+if (person.name) {
+    console.log('Имя не указано');
+}
