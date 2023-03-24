@@ -50,3 +50,34 @@
 // }
 
 // Использование if в функциях:
+// const sumPositiveNumbers = (a, b) => {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//     return 'One of the arguments is not a number'
+//     }
+
+//     if (a <= 0 || b <= 0) {
+//         return 'Number are not positive'
+//     }
+//     return a + b
+// }
+// console.log(sumPositiveNumbers('a', true));
+// console.log(sumPositiveNumbers(-10, 5));
+// console.log(sumPositiveNumbers(3, 5));
+
+// Инструкция switch:
+const month = 2
+switch (month) {
+    case 12:
+        console.log('Декабрь');
+        break
+    
+    case 1:
+        console.log('Январь');
+        break
+    case 2:
+        console.log('Февраль');
+        break
+
+    default:
+        console.log('Это не зимний месяц');
+}
