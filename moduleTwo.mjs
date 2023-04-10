@@ -18,9 +18,25 @@
 // console.log(two);
 
 // Переииенование импортов:
+// import {
+//     one as oneRenamed,
+//     two
+// } from './moduleOne.mjs'
+// console.log(oneRenamed);
+// console.log(two);
+
+// Пример экспорта нескольких переменных:
+// import {
+//     sum,
+//     mult
+// } from './moduleOne.mjs'
+// console.log(sum(10, 2));
+// console.log(mult(10, 2));
+
+// Переименование переменной mult в multNumbers:
 import {
-    one as oneRenamed,
-    two
+    sum,
+    mult as multNumbers
 } from './moduleOne.mjs'
-console.log(oneRenamed);
-console.log(two);
+console.log(sum(10, 2));
+console.log(multNumbers(10, 2));
