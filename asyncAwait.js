@@ -45,17 +45,52 @@
 
 // Тот же самый пример, но с отслеживанием выполнения промиса:
 
-const timerPromise = () => 
-    new Promise ((resolve, reject) => 
-    setTimeout (() => resolve (), 2000))
+// const timerPromise = () => 
+//     new Promise ((resolve, reject) => 
+//     setTimeout (() => resolve (), 2000))
 
-const asyncFn = async () => {
-    console.log('Time starts');
-    const startTime = performance.now()
-    await timerPromise ()
-    const endTime = performance.now()
-    console.log('Time ended', endTime - startTime);
-}
-console.log(asyncFn());
+// const asyncFn = async () => {
+//     console.log('Time starts');
+//     const startTime = performance.now()
+//     await timerPromise ()
+//     const endTime = performance.now()
+//     console.log('Time ended', endTime - startTime);
+// }
+// console.log(asyncFn());
 
 // Переход с промисов на async/await:
+// Пример с промисами:
+
+// const getData = (url) =>
+// new Promise ((resolve, reject) =>
+//     fetch (url)
+//     .then (response => response.json())
+//     .then (json => resolve (json))
+//     .catch (error => reject (error))
+//     )
+// getData ('https://jsonplaceholder.typicode.com/todos')
+// .then (response => response.json())
+// .then (json => resolve(json))
+// .catch (error => error.message)
+
+// Данный код с промисов на async/await:
+
+// const getData  =async (url) => {
+//     const res = await fetch (url)
+//     const json = await res.json()
+//     return json
+// }
+// getData ('https://jsonplaceholder.typicode.com/todos')
+// .then (response => response.json())
+// .then (json => resolve(json))
+// .catch (error => error.message)
+
+// Теперь перепишем нижнюю часть:
+
+const getData  =async (url) => {
+    const res = await fetch (url)
+    const json = await res.json()
+    return json
+}
+const url = 'https://jsonplaceholder.typicode.com/todos'
+const data = await getData (url)
